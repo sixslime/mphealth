@@ -1,11 +1,15 @@
 # Dependencies
+* xtem
 
 # Implements
 
 # Supports
 
 # Abstract?
-true / false
+false
+
+# NOTES
+* `naturalRegeneration` gamerule MUST be false.
 
 # TODO
 * Hunger Equalibrium
@@ -34,3 +38,4 @@ true / false
 
 * Potions
     * Potions of instant healing 2 are converted to instant healing 1 + health boost 1
+
