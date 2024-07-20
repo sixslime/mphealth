@@ -43,3 +43,33 @@ data modify storage mphealth:settings PERSIST set value false
 #-------------------
  data modify storage mphealth:settings hunger.equalibrium_delay set value 1200
 #>-------------------
+
+#>-------------------
+#> items.health_potion.enable : bool
+#-------------------
+# ~ enable item change: (potion) instant health II -> instant health I + health boost I
+#-------------------
+# - 
+#-------------------
+ data modify storage mphealth:settings items.health_potion.enable set value true
+#>-------------------
+
+#>-------------------
+#> items.health_potion.boost_duration : int
+#-------------------
+# ~ duration (in seconds) that the health boost lasts on potent instant health potions
+#-------------------
+# - 
+#-------------------
+ data modify storage mphealth:settings items.health_potion.boost_duration set value 180
+#>-------------------
+
+#>-------------------
+#> items.golden_apple.enable : bool
+#-------------------
+# ~ enable item change: (unenchanted) golden apple -> remove regeneration, not always edible
+#-------------------
+# - 
+#-------------------
+ data modify storage mphealth:settings items.golden_apple.enable set value true
+#>-------------------
