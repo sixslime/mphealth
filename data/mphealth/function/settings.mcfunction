@@ -57,11 +57,11 @@ data modify storage mphealth:settings PERSIST set value false
 #>-------------------
 #> items.health_potion.boost_duration : int
 #-------------------
-# ~ duration (in seconds) that the health boost lasts on potent instant health potions
+# ~ duration (in ticks) that the health boost lasts on potent instant health potions
 #-------------------
 # - 
 #-------------------
- data modify storage mphealth:settings items.health_potion.boost_duration set value 180
+ data modify storage mphealth:settings items.health_potion.boost_duration set value 6000
 #>-------------------
 
 #>-------------------
@@ -70,6 +70,16 @@ data modify storage mphealth:settings PERSIST set value false
 # ~ enable item change: (unenchanted) golden apple -> remove regeneration, not always edible
 #-------------------
 # - 
+#-------------------
+ data modify storage mphealth:settings items.golden_apple.enable set value true
+#>-------------------
+
+#>-------------------
+#> items.golden_apple.absorption_duration : int
+#-------------------
+# ~ duration (in ticks) of absorption a golden apple will grant when eaten.
+#-------------------
+# - `items.golden_apple.enable` must be true for this to take effect.
 #-------------------
  data modify storage mphealth:settings items.golden_apple.enable set value true
 #>-------------------
