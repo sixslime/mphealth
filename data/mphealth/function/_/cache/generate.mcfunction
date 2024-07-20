@@ -3,10 +3,11 @@
 # _/load
 #--------------------
 
-execute store result score *cache.health.recovery_max --mphealth run data get storage mphealth:settings health.recovery_time_per_damage.max
-execute store result score *cache.health.recovery_min --mphealth run data get storage mphealth:settings health.recovery_time_per_damage.min
-scoreboard players operation *cache.health.recovery_range --mphealth = *cache.health.recovery_max --mphealth
-scoreboard players operation *cache.health.recovery_range --mphealth -= *cache.health.recovery_min --mphealth
+execute store result score *cache.health.recovery.add_max --mphealth run data get storage mphealth:settings health.recovery.time_per_damage.max
+execute store result score *cache.health.recovery.add_min --mphealth run data get storage mphealth:settings health.recovery.time_per_damage.min
+execute store result score *cache.health.recovery.max --mphealth run data get storage mphealth:settings health.recovery.max_time
+scoreboard players operation *cache.health.recovery.range --mphealth = *cache.health.recovery.add_max --mphealth
+scoreboard players operation *cache.health.recovery.range --mphealth -= *cache.health.recovery.add_min --mphealth
 
 # constants
 scoreboard players set *20 --mphealth 20
