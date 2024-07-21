@@ -4,7 +4,6 @@
 #--------------------
 
 execute unless score @s _mphealth-health = @s _mphealth-dxhealth run function mphealth:_/player/health/on_change
-execute unless score @s _mphealth-food = @s _mphealth-dxfood run function mphealth:_/player/hunger/on_change
 
 execute if score @s mphealth-regen_delay matches ..-1 run function mphealth:_/player/health/regen
 
