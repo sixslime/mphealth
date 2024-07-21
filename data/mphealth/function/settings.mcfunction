@@ -35,6 +35,16 @@ data modify storage mphealth:settings PERSIST set value false
 #>-------------------
 
 #>-------------------
+#> hunger.equilibrium_delay : int
+#-------------------
+# ~ the time it takes, after a hunger value change, for hunger equilibrium to change.
+#-------------------
+# - 
+#-------------------
+ data modify storage mphealth:settings hunger.equilibrium_delay set value 1200
+#>-------------------
+
+#>-------------------
 #> items.health_potion.enable : bool
 #-------------------
 # ~ enable item change: (potion) instant health II -> instant health I + health boost I

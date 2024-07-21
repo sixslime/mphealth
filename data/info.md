@@ -13,8 +13,6 @@ false
 * `naturalRegeneration` gamerule MUST be false.
 
 # TODO
-
-## SCRAPPED
 * Hunger equilibrium
     * you have a Hunger equilibrium value (HE)
     * every time your hunger changes, your hunger equilibrium will reflect the change after 1 minute

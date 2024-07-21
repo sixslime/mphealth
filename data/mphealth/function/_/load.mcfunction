@@ -26,6 +26,7 @@ scoreboard objectives add mphealth-regen_delay dummy
 scoreboard objectives add _mphealth-health health
 scoreboard objectives add _mphealth-dxhealth dummy
 scoreboard objectives add _mphealth-food food
+scoreboard objectives add _mphealth-dxfood dummy
 #scoreboard objectives add mphealth-scoreboard dummy
 
 # cache
