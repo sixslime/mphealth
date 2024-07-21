@@ -35,13 +35,13 @@ data modify storage mphealth:settings PERSIST set value false
 #>-------------------
 
 #>-------------------
-#> hunger.equalibrium_delay : int
+#> hunger.equilibrium_delay : int
 #-------------------
-# ~ the time it takes, after a hunger value change, for hunger equalibrium to change.
+# ~ the time it takes, after a hunger value change, for hunger equilibrium to change.
 #-------------------
 # - 
 #-------------------
- data modify storage mphealth:settings hunger.equalibrium_delay set value 1200
+ data modify storage mphealth:settings hunger.equilibrium_delay set value 1200
 #>-------------------
 
 #>-------------------

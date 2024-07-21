@@ -13,9 +13,9 @@ false
 * `naturalRegeneration` gamerule MUST be false.
 
 # TODO
-* Hunger Equalibrium
-    * you have a Hunger Equalibrium value (HE)
-    * every time your hunger changes, your hunger equalibrium will reflect the change after 1 minute
+* Hunger equilibrium
+    * you have a Hunger equilibrium value (HE)
+    * every time your hunger changes, your hunger equilibrium will reflect the change after 1 minute
     * if your hunger bar is more than 8 above your HE, gain scaling slowness.
     * if it is significantly more, gain nausea and hunger.
     * if it is 8 less then gain mining fatigue and weakness and slowness.
