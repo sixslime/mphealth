@@ -13,6 +13,8 @@ false
 * `naturalRegeneration` gamerule MUST be false.
 
 # TODO
+
+##SCRAPPED
 * Hunger equilibrium
     * you have a Hunger equilibrium value (HE)
     * every time your hunger changes, your hunger equilibrium will reflect the change after 1 minute
@@ -20,7 +22,9 @@ false
     * if it is significantly more, gain nausea and hunger.
     * if it is 8 less then gain mining fatigue and weakness and slowness.
     * BASICALLY, if your hunger changes too fast, gain negative effects.
+===
 
+> perhaps make a per-player system instead of global constants for these systems.
 * Adrenaline
     * falling below 2 hearts will trigger:
         * resistance 2 for 8 seconds
