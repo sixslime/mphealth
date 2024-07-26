@@ -17,8 +17,11 @@ scoreboard players operation *health.recovery -mphealth *= *health.change -mphea
 execute if score *health.change -mphealth matches ..-1 run scoreboard players set *health.recovery -mphealth 0
 execute if score *health.change -mphealth matches 1.. run scoreboard players set @s mphealth-regen_delay 0
 scoreboard players operation @s mphealth-recovery_time += *health.recovery -mphealth
-# max
+
 execute if score @s mphealth-recovery_time > *cache.health.recovery.max --mphealth run scoreboard players operation @s mphealth-recovery_time = *cache.health.recovery.max --mphealth
+
+# adrenaline
+execute if score *cache.health.adrenaline.enable --mphealth matches 1 if score @s mphealth-adrenaline_cooldown matches ..-1 if score @s _mphealth-health <= *cache.health.adrenaline.threshold --mphealth run function mphealth:_/player/health/adrenaline/trigger
 
 scoreboard players reset *health.recovery -mphealth
 scoreboard players reset *health.change -mphealth

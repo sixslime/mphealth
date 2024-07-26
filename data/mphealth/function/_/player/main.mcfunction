@@ -10,3 +10,4 @@ execute if score @s mphealth-regen_delay matches ..-1 run function mphealth:_/pl
 
 execute if score @s mphealth-recovery_time matches -1 run scoreboard players remove @s mphealth-regen_delay 1
 execute if score @s mphealth-recovery_time matches 0.. run scoreboard players remove @s mphealth-recovery_time 1
+execute if score @s mphealth-adrenaline_cooldown matches 0.. run scoreboard players remove @s mphealth-adrenaline_cooldown 1
