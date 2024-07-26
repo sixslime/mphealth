@@ -1,7 +1,5 @@
 {
     "values": [
-        "#later:load",
-        "#later.prt:load",
         "#mphealth:load"
     ]
 }
