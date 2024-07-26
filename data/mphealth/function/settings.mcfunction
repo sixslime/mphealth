@@ -35,62 +35,6 @@ data modify storage mphealth:settings health.regen_delay set value 200
 #>-------------------
 
 #>-------------------
-#> health.adrenaline.enable : bool
-#-------------------
-# ~ enable the adrenaline system
-#-------------------
-# - adrenaline gives the player effects/attributes for a duration when they go below a certain health threshold.
-#-------------------
-data modify storage mphealth:settings health.adrenaline.enable set value true
-#>-------------------
-
-#>-------------------
-#> health.adrenaline.threshold : int
-#-------------------
-# ~ the health value a player must be at or below in order for adrenaline to trigger.
-#-------------------
-# - adrenaline will trigger when the player takes damage and has no adrenaline cooldown.
-#-------------------
-data modify storage mphealth:settings health.adrenaline.threshold set value 6
-#>-------------------
-
-#>-------------------
-#> health.adrenaline.cooldown : int
-#-------------------
-# ~ the time (in ticks) after triggering adrenaline before it can be triggered again.
-#-------------------
-#
-#-------------------
-data modify storage mphealth:settings health.adrenaline.cooldown set value 24000
-#>-------------------
-
-#>-------------------
-#> health.adrenaline.attributes[] : {attribute: string, amount: float, operation: string, ticks: int}
-#-------------------
-# ~ attributes gained when adrenaline triggers.
-#-------------------
-#
-#-------------------
-data modify storage mphealth:settings health.adrenaline.attributes set value []
-data modify storage mphealth:settings health.adrenaline.attributes append value {attribute:"minecraft:generic.movement_speed", amount:0.2, operation:"add_multiplied_total"}
-data modify storage mphealth:settings health.adrenaline.attributes append value {attribute:"minecraft:generic.attack_damage", amount:2, operation:"add_value"}
-data modify storage mphealth:settings health.adrenaline.attributes append value {attribute:"minecraft:generic.attack_knockback", amount:1, operation:"add_value"}
-data modify storage mphealth:settings health.adrenaline.attributes[].ticks set value 160
-#>-------------------
-
-#>-------------------
-#> health.adrenaline.effects[] : {effect: string, amplifier: int, seconds:int}
-#-------------------
-# ~ player effects gained when adrenaline triggers.
-#-------------------
-#
-#-------------------
-data modify storage mphealth:settings health.adrenaline.effects set value []
-data modify storage mphealth:settings health.adrenaline.effects append value {effect: "minecraft:resistance", amplifier:0, seconds: 8}
-data modify storage mphealth:settings health.adrenaline.effects append value {effect: "minecraft:hunger", amplifier:2, seconds: 10}
-#>-------------------
-
-#>-------------------
 #> items.health_potion.enable : bool
 #-------------------
 # ~ enable item change: (potion) instant health II -> instant health I + health boost I

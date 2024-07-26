@@ -7,8 +7,6 @@ execute store result score *cache.health.recovery.add_max --mphealth run data ge
 execute store result score *cache.health.recovery.add_min --mphealth run data get storage mphealth:settings health.recovery.time_per_damage.min
 execute store result score *cache.health.recovery.max --mphealth run data get storage mphealth:settings health.recovery.max_time
 execute store result score *cache.health.regen_delay --mphealth run data get storage mphealth:settings health.regen_delay
-execute store result score *cache.health.adrenaline.threshold --mphealth run data get storage mphealth:settings health.adrenaline.threshold
-execute store result score *cache.health.adrenaline.enable --mphealth run data get storage mphealth:settings health.adrenaline.enable
 scoreboard players operation *cache.health.recovery.range --mphealth = *cache.health.recovery.add_max --mphealth
 scoreboard players operation *cache.health.recovery.range --mphealth -= *cache.health.recovery.add_min --mphealth
 
