@@ -1,5 +1,6 @@
 # Dependencies
 * xtem
+* eotheal
 
 # Implements
 
