@@ -71,5 +71,5 @@ data modify storage mphealth:settings items.golden_apple.enable set value true
 #-------------------
 # - `items.golden_apple.enable` must be true for this to take effect.
 #-------------------
-data modify storage mphealth:settings items.golden_apple.enable set value true
+data modify storage mphealth:settings items.golden_apple.absorption_duration set value 1800
 #>-------------------
