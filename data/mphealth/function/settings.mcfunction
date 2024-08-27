@@ -51,7 +51,7 @@ data modify storage mphealth:settings items.health_potion.enable set value true
 #-------------------
 # - 
 #-------------------
-data modify storage mphealth:settings items.health_potion.boost_duration set value 6000
+data modify storage mphealth:settings items.health_potion.boost_duration set value 3600
 #>-------------------
 
 #>-------------------

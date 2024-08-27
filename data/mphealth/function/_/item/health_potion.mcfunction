@@ -3,7 +3,6 @@
 # ./register
 #--------------------
 
-say hi
 execute unless data storage mphealth:settings items.health_potion{enable:true} run return fail
 
 data modify storage mphealth:var item.item set from entity @s item
