@@ -4,7 +4,8 @@
 data modify storage mphealth:settings PERSIST set value false
 
 #>-------------------
-#> health.recovery.time_per_damage : {min: int, max: int}
+#> health.recovery.time_per_damage
+#: {min: int, max: int}
 #-------------------
 # ~ the recovery time (in ticks) added per point of damage taken.
 #-------------------
@@ -15,7 +16,8 @@ data modify storage mphealth:settings health.recovery.time_per_damage set value 
 #>-------------------
 
 #>-------------------
-#> health.recovery.max_time : int
+#> health.recovery.max_time
+#: int
 #-------------------
 # ~ the absolute maximum recovery time (in ticks) a player can have.
 #-------------------
@@ -25,11 +27,10 @@ data modify storage mphealth:settings health.recovery.max_time set value 12000
 #>-------------------
 
 #>-------------------
-#> health.regen_delay : int
+#> health.regen_delay
+#: int
 #-------------------
 # ~ the delay (in ticks) between regenerating points of health when recovery is at 0.
-#-------------------
-# - 
 #-------------------
 data modify storage mphealth:settings health.regen_delay set value 200
 #>-------------------

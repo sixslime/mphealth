@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 55,
-		"description": "pack description. -SixSlime"
+		"pack_format": 61,
+		"description": "Health and hunger rebalance intended to make you think a little more."
 	}
 }
